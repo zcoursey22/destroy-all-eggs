@@ -2,10 +2,10 @@ const twit = require('twit');
 const twitterCreds = require('./config.js');
 
 let config = {
-  consumer_key: process.env.BOT_CONSUMER_KEY,
-  consumer_secret: process.env.BOT_CONSUMER_SECRET,
-  access_token: process.env.BOT_ACCESS_TOKEN,
-  access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
+  consumer_key: process.env.BOT_CONSUMER_KEY ||  twitterCreds.consumer_key,
+  consumer_secret: process.env.BOT_CONSUMER_SECRET || twitterCreds.consumer_secret,
+  access_token: process.env.BOT_ACCESS_TOKEN || twitterCreds.access_token,
+  access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET || twitterCreds.access_token_secret
 };
 
 const Twit = new twit(config);
