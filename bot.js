@@ -15,7 +15,7 @@ var stream = Twit.stream('statuses/filter', { track: ['@DestroyAllEggs'] });
 var replyToAt = (tweet) => {
   var atName = tweet.user.screen_name;
   var tweetId = tweet.id_str;
-  var reply = `Yo @${atName}! Thanks for not being an egg ${String.fromCodePoint(0x1F60E)}`;
+  var reply = `Yo @${atName}! Thanks for not being an egg!`;
 
   if (tweet.user.profile_image_url === 'http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png') {
     reply = `Don't be an egg, @${atName}! Go give yourself a real profile picture!`;
