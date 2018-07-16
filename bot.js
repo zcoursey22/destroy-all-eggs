@@ -1,5 +1,5 @@
 const twit = require('twit');
-const twitterCreds = require('./config.js');
+// const twitterCreds = require('./config.js');
 
 let config = {
   consumer_key: process.env.BOT_CONSUMER_KEY ||  twitterCreds.consumer_key,
