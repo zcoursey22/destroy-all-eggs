@@ -1,6 +1,12 @@
 const twit = require('twit');
-const config = require('./config.js');
+// const config = require('./config.js');
 
+let config = {
+  consumer_key: process.env.BOT_CONSUMER_KEY,
+  consumer_secret: process.env.BOT_CONSUMER_SECRET,
+  access_token: process.env.BOT_ACCESS_TOKEN,
+  access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
+};
 const Twit = new twit(config);
 
 var stream = Twit.stream('statuses/filter', { track: ['DestroyAllEggs'] });
