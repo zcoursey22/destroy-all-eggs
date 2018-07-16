@@ -2,7 +2,7 @@
   "name": "twitter-egg-bot",
   "version": "1.0.0",
   "description": "Twitter bot to tweet at users with the default profile picture, telling them to change it",
-  "main": "server.js",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/zcoursey22/twitter-egg-bot/issues"
   },
-  "homepage": "https://github.com/zcoursey22/twitter-egg-bot#readme"
+  "homepage": "https://github.com/zcoursey22/twitter-egg-bot#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.2"
+  }
 }
